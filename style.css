@@ -209,7 +209,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("assets/img-fundo.jpg");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("/assets/img-fundo.jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -336,6 +336,22 @@ i {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .desktop-image {
+    display: block;
+  }
+  .mobile-image {
+    display: none;
+  }
+}
 .horario {
   background-color: #fff;
   color: #232224;
